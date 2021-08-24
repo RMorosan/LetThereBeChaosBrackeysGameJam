@@ -20,6 +20,46 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Pickup",
+                    "type": "Button",
+                    "id": "af16122f-9ec5-4dd9-a985-d797aecd71de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "493603a7-1d87-4339-94b7-8043a194ce88",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PanCamera",
+                    "type": "Value",
+                    "id": "632d640c-f849-4bfe-8756-8dec7cb4cac0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PanCameraTrigger",
+                    "type": "Button",
+                    "id": "33960df3-6d10-4326-ac3b-e2f8054828f1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "276892d1-3308-4d25-a77c-79bb78ed498a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -29,7 +69,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "Press",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -37,10 +77,10 @@
                 {
                     "name": "",
                     "id": "32f0e103-c358-47a3-ab13-803dea66e8d1",
-                    "path": "<Gamepad>/rightStick",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -62,7 +102,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -73,7 +113,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -84,7 +124,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -95,10 +135,87 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Everything",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c3682127-5792-4ff7-bbb0-82149adec8eb",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54c3d276-1fb3-40f4-9dd2-5175c6321c04",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c601da1-7ce9-4205-8bd2-025df5bf9734",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b27546fd-73fc-4ee9-91ee-ba4a8ed6e10a",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65cc8619-c711-475e-9814-90e557f21027",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "PanCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2f8e8e75-7feb-41dd-93d5-4f135252182a",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "PanCameraTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5345652a-bc3f-4868-b875-d5d0de23deab",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -130,5 +247,27 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Everything",
+            "bindingGroup": "Everything",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
