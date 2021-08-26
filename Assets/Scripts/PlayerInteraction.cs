@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
         //rotation = context.ReadValue<Vector2>();
         //Debug.Log(rotation);
     }
-    // Update is called once per frame
+
     void Update()
     {
         

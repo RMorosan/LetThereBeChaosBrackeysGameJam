@@ -57,7 +57,7 @@
                     "name": "Zoom",
                     "type": "Value",
                     "id": "276892d1-3308-4d25-a77c-79bb78ed498a",
-                    "expectedControlType": "",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 }
@@ -209,13 +209,46 @@
                 {
                     "name": "",
                     "id": "5345652a-bc3f-4868-b875-d5d0de23deab",
-                    "path": "<Mouse>/scroll",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "Everything",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "f133f0b6-fea7-4afb-8626-137f85f94a9b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "1a86c14a-8829-4bc2-aa7d-d64265c232c4",
+                    "path": "<DualShockGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "Normalize(min=-0.03137255,zero=-0.03137255)",
+                    "groups": "Everything",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "09b851fb-1e89-489a-a000-27feb755cdec",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "Everything",
                     "action": "Zoom",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 }
             ]
         },
